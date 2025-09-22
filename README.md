@@ -27,19 +27,6 @@ Mock API: MSW(Mock Service Worker)
 
 Style: CSS
 
-📂 폴더 구조
-src/
- ┣ components/         # 공통 컴포넌트
- ┣ contexts/           # 전역 상태 관리 (OrderContext 등)
- ┣ mocks/              # Mock API (MSW)
- ┣ pages/              # 페이지 단위 컴포넌트
- ┃ ┣ OrderPage/        # 상품 선택, 옵션, 인원 수
- ┃ ┣ SummaryPage/      # 주문 요약
- ┃ ┣ CompletePage/     # 주문 완료
- ┣ tests/              # 테스트 코드
- ┣ App.js              # 라우팅 및 전체 구조
- ┣ index.js            # 엔트리 포인트
-
 🔄 서비스 플로우
 
 메인 페이지 → 상품 목록 확인
