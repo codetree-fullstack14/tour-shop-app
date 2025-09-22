@@ -1,0 +1,73 @@
+🛫 여행상품 판매 서비스
+
+간단한 여행상품 선택 및 주문 흐름을 체험할 수 있는 React 기반 프로젝트입니다.
+사용자는 여행지를 선택하고 옵션(숙박, 교통 등)과 인원 수를 지정한 후, 결제 페이지(결제 API 연동 없음)까지 진행할 수 있습니다.
+
+📌 프로젝트 개요
+
+목표: React 학습을 위한 간단한 쇼핑몰/여행상품 서비스 구현
+
+주요 기능
+
+여행지 상품 선택
+
+옵션 및 인원 선택
+
+주문 요약 확인
+
+주문 완료 페이지 이동
+
+🛠 기술 스택
+
+Frontend: React (CRA 기반)
+
+Test: Jest, React Testing Library
+
+Mock API: MSW(Mock Service Worker)
+
+Style: CSS
+
+📂 폴더 구조
+src/
+ ┣ components/         # 공통 컴포넌트
+ ┣ contexts/           # 전역 상태 관리 (OrderContext 등)
+ ┣ mocks/              # Mock API (MSW)
+ ┣ pages/              # 페이지 단위 컴포넌트
+ ┃ ┣ OrderPage/        # 상품 선택, 옵션, 인원 수
+ ┃ ┣ SummaryPage/      # 주문 요약
+ ┃ ┣ CompletePage/     # 주문 완료
+ ┣ tests/              # 테스트 코드
+ ┣ App.js              # 라우팅 및 전체 구조
+ ┣ index.js            # 엔트리 포인트
+
+🔄 서비스 플로우
+
+메인 페이지 → 상품 목록 확인
+
+상품 상세 페이지 → 옵션 선택
+
+인원 수 선택
+
+주문 요약 페이지 → 선택한 상품/옵션 확인
+
+주문 완료 페이지 → 완료 메시지 표시
+
+🚀 실행 방법
+# 패키지 설치
+npm install
+
+# 개발 서버 실행
+npm start
+
+# 테스트 실행
+npm test
+
+📈 향후 개선 사항
+
+실제 결제 API 연동 (예: PortOne, Stripe 등)
+
+사용자 인증 및 예약 내역 조회 기능 추가
+
+반응형 디자인 적용
+
+여행지/옵션 데이터를 DB와 연동
